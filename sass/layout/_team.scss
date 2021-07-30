@@ -9,6 +9,78 @@
   }
 }
 
+.name-list {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.job-desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 16px;
+}
+
+.photo-list {
+  margin-bottom: 30px;
+}
+
+.photo-items {
+  background-color: var(--acent-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .photo-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    &-title {
+      margin-bottom: 30px;
+    }
+  }
+
+  .photos-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .photo-items {
+    flex-basis: calc((100% - 60px) / 2);
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photos-list {
+    flex-wrap: nowrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .photo-items {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
 // .photos-list {
 //   display: flex;
 //   margin-top: -30px;
@@ -24,28 +96,6 @@
 //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 //     0px 2px 1px rgba(0, 0, 0, 0.2);
 //   border-radius: 0px 0px 4px 4px;
-// }
-
-// .photo-list {
-//   margin-bottom: 30px;
-// }
-
-// .name-list {
-//   font-size: 16px;
-//   line-height: 1.19;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-// }
-
-// .job-desc {
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 1.19;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   color: var(--secondary-text-color);
-
-//   margin-bottom: 16px;
 // }
 
 // &-title {
