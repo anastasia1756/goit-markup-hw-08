@@ -1,16 +1,6 @@
-.nav-list__link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.nav-list-items {
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.nav-list {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .map-nav {
@@ -20,4 +10,33 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--acent-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.nav-list__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.nav-list-items {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list-items {
+    text-align: left;
+  }
 }

@@ -1,9 +1,6 @@
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(700, 24px, 28px);
   color: var(--secondary-icons-color);
 
   &__accent {
@@ -11,14 +8,38 @@
   }
 }
 
-.header__logo {
-  margin-right: 90px;
-}
-
 .footer__logo {
   display: block;
-  margin-right: 0;
   margin-bottom: 20px;
+  text-align: center;
 
   color: var(--acent-text-color);
 }
+
+@media screen and (min-width: 1200px) {
+  @include font(700, 26px, 31px);
+}
+// .logo {
+//   font-family: "Raleway", sans-serif;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--secondary-icons-color);
+
+//   &__accent {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .header__logo {
+//   margin-right: 90px;
+// }
+
+// .footer__logo {
+//   display: block;
+//   margin-right: 0;
+//   margin-bottom: 20px;
+
+//   color: var(--acent-text-color);
+// }

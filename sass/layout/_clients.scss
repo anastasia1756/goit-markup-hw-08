@@ -1,46 +1,80 @@
-.client-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+// .client-title {
+//   @include font(700, 28px, 33px);
+//   text-align: center;
+//   color: var(--main-text-color);
 
-  margin-bottom: 50px;
-}
+//   margin-bottom: 30px;
+// }
 
-.companies-list {
-  @extend %align;
-  justify-content: space-between;
+// .companies-list {
+//   @extend %align;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+//   margin-top: -30px;
+//   margin-left: -30px;
 
-  &-items {
-    display: flex;
-  }
-}
+//   &-items {
+//     display: flex;
+//     flex-basis: calc((100% - 60px) / 2);
+//     margin-top: 30px;
+//     margin-left: 30px;
+//     height: 92px;
+//   }
+// }
 
-.companies-link {
-  content: "";
-  @extend %align;
-  margin: auto;
-  justify-content: center;
-  fill: var(--icons-color);
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
+// .companies-link {
+//   @extend %align;
+//   margin: auto;
+//   justify-content: center;
+//   fill: var(--icons-color);
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   width: 210px;
+//   height: 92px;
+// }
 
-  @include transition(border);
-  @include transition(fill);
+// .client-title {
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.17;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: var(--main-text-color);
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+//   margin-bottom: 50px;
+// }
 
-  &:hover,
-  &:focus {
-    content: "";
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    outline: none;
-  }
-}
+// .companies-list {
+//   @extend %align;
+//   justify-content: space-between;
+
+//   &-items {
+//     display: flex;
+//   }
+// }
+
+// .companies-link {
+//   @extend %align;
+//   margin: auto;
+//   justify-content: center;
+//   fill: var(--icons-color);
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   width: 170px;
+//   height: 92px;
+
+//   @include transition(border);
+//   @include transition(fill);
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     content: "";
+//     fill: var(--accent-color);
+//     border: 1px solid var(--accent-color);
+//     outline: none;
+//   }
+// }

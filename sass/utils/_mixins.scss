@@ -4,7 +4,7 @@
   transition-timing-function: $ttf;
 }
 
-@mixin font($fw, $fs, $lh, $ls: 0.03) {
+@mixin font($fw, $fs, $lh, $ls: 0.03em) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh/$fs;
