@@ -17,7 +17,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  @include font(700, 26px, 31px);
+  .footer__logo {
+    @include font(700, 26px, 31px);
+    text-align: start;
+  }
 }
 // .logo {
 //   font-family: "Raleway", sans-serif;

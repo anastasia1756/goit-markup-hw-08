@@ -2,6 +2,86 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+.site-nav-list {
+  display: none;
+}
+
+.contacts-list {
+  display: none;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: wheat;
+
+  &__container {
+    position: relative;
+    padding-top: 48px;
+    padding-left: 40px;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.menu-nav-list {
+  margin-bottom: 306px;
+
+  &__link {
+    @include font(500, 40px, 47px, 0.02em);
+    color: var(--main-text-color);
+  }
+}
+
+.menu-contacts-list {
+  &__tel-link {
+    @include font(500, 34px, 40px, 0.02em);
+    color: var(--accent-color);
+  }
+
+  &__mail-contact {
+    @include font(500, 24px, 28px, 0.02em);
+    color: var(--secondary-text-color);
+  }
+}
+
+.menu-social-list {
+  margin-bottom: 64px;
+
+  &__link {
+    @include font(500, 18px, 22px, 0.02em);
+    color: var(--accent-color);
+  }
+}
+.close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.header {
+  &__container {
+    @extend %align;
+    justify-content: space-between;
+  }
+}
 // .header {
 //   padding-top: 24px;
 //   padding-bottom: 25px;
