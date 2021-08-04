@@ -7,14 +7,14 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/hero/Header-mobile.jpg");
+    url("./images/hero/Header-mobile.jpg");
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
   screen and (min-resolution: 192dpi) and (min-width: 280px),
   screen and (min-resolution: 2dppx) and (min-width: 280px) {
   .main-section {
-    background-image: url("../../images/hero/Header-mobile@2x.jpg");
+    background-image: url("./images/hero/Header-mobile@2x.jpg");
   }
 }
 
@@ -41,7 +41,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/Header-tablet.jpg);
+      url(./images/hero/Header-tablet.jpg);
   }
 }
 
@@ -49,7 +49,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .main-section {
-    background-image: url("../../images/hero/Header-tablet@2x.jpg");
+    background-image: url("./images/hero/Header-tablet@2x.jpg");
   }
 }
 
@@ -61,7 +61,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/Header-desktop.jpg);
+      url(./images/hero/Header-desktop.jpg);
   }
 
   .hero-title {
@@ -75,6 +75,6 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .main-section {
-    background-image: url("../../images/hero/Header-desktop@2x.jpg");
+    background-image: url("./images/hero/Header-desktop@2x.jpg");
   }
 }
