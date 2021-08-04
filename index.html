@@ -34,7 +34,7 @@
               </li>
             </ul>
           </nav>
-          <button class="burger-btn">
+          <button class="burger-btn" data-menu-open>
             <svg class="burger-btn__icon" width="40" height="40">
               <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
@@ -54,48 +54,52 @@
             </li>
           </ul>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
           <div class="container mobile-menu__container">
-            <button class="close-btn mobile-menu__close-btn">
+            <button class="close-btn mobile-menu__close-btn" data-menu-close>
               <svg class="close-btn__icon" width="40" height="40">
                 <use href="./images/sprite.svg#icon-cross"></use>
               </svg>
             </button>
-            <ul class="menu-nav-list list">
-              <li class="menu-nav-list__item">
-                <a class="menu-nav-list__link link" href="./index.html">Студия</a>
-              </li>
-              <li class="menu-nav-list__item">
-                <a class="menu-nav-list__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu-nav-list__item">
-                <a class="menu-nav-list__link link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="menu-contacts-list list">
-            <li class="menu-contacts-list__items">
-              <a class="menu-contacts-list__tel-link link" href="tel:+380961111111">
-                +38 096 111 11 11</a>
-            </li>
-            <li class="menu-contacts-list__items">
-              <a class="menu-contacts-list__mail-contact link" href="mailto:info@devstudio.com">
-                info@devstudio.com</a>
-            </li>
-          </ul>
-          <ul class="menu-social-list list">
-            <li class="menu-social-list__item">
-              <a href="#" class="menu-social-list__link link">Instagram</a>
-            </li>
-            <li class="menu-social-list__item">
-              <a href="#" class="menu-social-list__link link">Twitter</a>
-            </li>
-            <li class="menu-social-list__item">
-              <a href="#" class="menu-social-list__link link">Facebook</a>
-            </li>
-            <li class="menu-social-list__item">
-              <a href="#" class="menu-social-list__link link">LinkedIn</a>
-            </li>
-          </ul>
+            <div class="navigation__wrapper">
+              <ul class="menu-nav-list list">
+                <li class="menu-nav-list__item">
+                  <a class="menu-nav-list__link link current" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-nav-list__item">
+                  <a class="menu-nav-list__link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-nav-list__item">
+                  <a class="menu-nav-list__link link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu__wrapper">
+              <ul class="menu-contacts-list list">
+                <li class="menu-contacts-list__items">
+                  <a class="menu-contacts-list__tel-link link" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="menu-contacts-list__items">
+                  <a class="menu-contacts-list__mail-contact link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="menu-social-list list">
+                <li class="menu-social-list__item">
+                  <a href="#" class="menu-social-list__link link">Instagram</a>
+                </li>
+                <li class="menu-social-list__item">
+                  <a href="#" class="menu-social-list__link link">Twitter</a>
+                </li>
+                <li class="menu-social-list__item">
+                  <a href="#" class="menu-social-list__link link">Facebook</a>
+                </li>
+                <li class="menu-social-list__item">
+                  <a href="#" class="menu-social-list__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -422,50 +426,49 @@
     </main>
 
     <!--CLIENTS-->
-    <!-- <section class="client-section section">
+    <section class="client-section section">
       <div class="container client-container">
         <h2 class="client-title">Постоянные клиенты</h2>
         <div>
           <ul class="companies-list">
-            <li class="companies-list-items">
-              <div class="companies-wrapper">
+            <li class="companies-list-items list">
               <a href="#" class="companies-link">
                 <svg class="cmp-list" width="106" height="60">
                   <use href="./images/sprite.svg#icon-yaco"></use>
                 </svg>
-                </a></div>
+                </a>
             </li>
-            <li class="companies-list-items">
+            <li class="companies-list-items list">
               <a href="#" class="companies-link">
-              <svg class="cmp-list" width="40" height="52">
+              <svg class="cmp-list" width="106" height="60">
                 <use href="./images/sprite.svg#icon-here"></use>
               </svg>
               </a>
             </li>
-            <li class="companies-list-items">
+            <li class="companies-list-items list">
               <a href="#" class="companies-link">
-              <svg class="cmp-list" width="43" height="41">
+              <svg class="cmp-list" width="106" height="60">
                 <use href="./images/sprite.svg#icon-company"></use>
               </svg>
               </a>
             </li>
-            <li class="companies-list-items">
+            <li class="companies-list-items list">
               <a href="#" class="companies-link">
-              <svg class="cmp-list" width="84" height="41">
+              <svg class="cmp-list" width="106" height="60">
                 <use href="./images/sprite.svg#icon-foster"></use>
               </svg>
               </a>
             </li>
-            <li class="companies-list-items">
+            <li class="companies-list-items list">
               <a href="#" class="companies-link">
-              <svg class="cmp-list" width="63" height="45">
+              <svg class="cmp-list" width="106" height="60">
                 <use href="./images/sprite.svg#icon-brand"></use>
               </svg>
               </a>
             </li>
-            <li class="companies-list-items">
+            <li class="companies-list-items list">
               <a href="#" class="companies-link">
-              <svg class="cmp-list" width="94" height="44">
+              <svg class="cmp-list" width="106" height="60">
                 <use href="./images/sprite.svg#icon-tagline"></use>
               </svg>
               </a>
@@ -473,7 +476,7 @@
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
     
     <!--FOOTER-->
     <footer class="footer section">
@@ -603,5 +606,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

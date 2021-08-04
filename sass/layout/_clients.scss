@@ -1,38 +1,72 @@
-// .client-title {
-//   @include font(700, 28px, 33px);
-//   text-align: center;
-//   color: var(--main-text-color);
+.client-title {
+  @include font(700, 28px, 33px);
+  //   text-align: center;
+  color: var(--main-text-color);
 
-//   margin-bottom: 30px;
-// }
+  margin-bottom: 30px;
+}
 
-// .companies-list {
-//   @extend %align;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   margin-top: -30px;
-//   margin-left: -30px;
+.companies-list {
+  @extend %align;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 
-//   &-items {
-//     display: flex;
-//     flex-basis: calc((100% - 60px) / 2);
-//     margin-top: 30px;
-//     margin-left: 30px;
-//     height: 92px;
-//   }
-// }
+  &-items {
+    width: 210px;
+    height: 92px;
+    @extend %align;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
 
-// .companies-link {
-//   @extend %align;
-//   margin: auto;
-//   justify-content: center;
-//   fill: var(--icons-color);
-//   border: 1px solid #afb1b8;
-//   border-radius: 4px;
-//   width: 210px;
-//   height: 92px;
-// }
+.companies-link {
+  //   @extend %align;
+  margin: auto;
+  //   justify-content: center;
+  fill: var(--icons-color);
+  border: none;
+  width: 106px;
+  height: 60px;
+}
 
+.client-title {
+  @include font(700, 28px, 33px);
+  text-align: center;
+  color: var(--main-text-color);
+
+  margin-bottom: 50px;
+}
+
+//768+
+@media screen and (min-width: 768px) {
+  .companies-list {
+    &-items {
+      flex-basis: calc((100% - 90px) / 3);
+    }
+  }
+}
+
+//1200+
+@media screen and (min-width: 1200px) {
+  .companies-list {
+    margin-top: 0;
+    margin-left: 0;
+    flex-wrap: unset;
+    &-items {
+      margin-top: 0;
+      margin-left: 0;
+      flex-basis: unset;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
 // .client-title {
 //   font-weight: 700;
 //   font-size: 36px;
@@ -54,9 +88,9 @@
 // }
 
 // .companies-link {
-//   @extend %align;
-//   margin: auto;
-//   justify-content: center;
+//   //   @extend %align;
+//   //   margin: auto;
+//   //   justify-content: center;
 //   fill: var(--icons-color);
 //   border: 1px solid #afb1b8;
 //   border-radius: 4px;

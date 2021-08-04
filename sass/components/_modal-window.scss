@@ -42,7 +42,9 @@
   flex-direction: column;
 
   &-head {
+    margin: auto;
     margin-bottom: 12px;
+    max-width: 315px;
 
     font-weight: 700;
     font-size: 20px;
@@ -190,5 +192,14 @@
   &:focus,
   &:hover {
     background-color: var(--secondary-bg-color);
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .modal-form {
+    &-head {
+      max-width: unset;
+      margin-left: unset;
+    }
   }
 }

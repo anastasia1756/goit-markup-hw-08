@@ -94,3 +94,20 @@
 //     margin-right: 10px;
 //   }
 // }
+
+.menu-social-list {
+  display: flex;
+
+  &__item {
+    padding-right: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__link {
+    @include font(500, 18px, 22px, 0.02em);
+    color: var(--accent-color);
+  }
+}

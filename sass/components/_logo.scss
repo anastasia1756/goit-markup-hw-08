@@ -16,11 +16,21 @@
   color: var(--acent-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__logo {
     @include font(700, 26px, 31px);
     text-align: start;
   }
+}
+
+.header__logo {
+  margin-right: 93px;
 }
 // .logo {
 //   font-family: "Raleway", sans-serif;
@@ -33,10 +43,6 @@
 //   &__accent {
 //     color: var(--accent-color);
 //   }
-// }
-
-// .header__logo {
-//   margin-right: 90px;
 // }
 
 // .footer__logo {
