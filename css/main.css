@@ -725,12 +725,12 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/Header-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-mobile.jpg");
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
   .main-section {
-    background-image: url("../../images/hero/Header-mobile@2x.jpg");
+    background-image: url("../images/hero/Header-mobile@2x.jpg");
   }
 }
 
@@ -755,20 +755,20 @@ img {
 
 @media screen and (min-width: 768px) {
   .main-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/Header-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-tablet.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .main-section {
-    background-image: url("../../images/hero/Header-tablet@2x.jpg");
+    background-image: url("../images/hero/Header-tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-section {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/Header-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-desktop.jpg);
   }
   .hero-title {
     font-size: 44px;
@@ -779,7 +779,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .main-section {
-    background-image: url("../../images/hero/Header-desktop@2x.jpg");
+    background-image: url("../images/hero/Header-desktop@2x.jpg");
   }
 }
 
@@ -805,8 +805,7 @@ img {
   border-radius: 4px;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 190px;
-  padding-right: 190px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -819,6 +818,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -30px;
+  }
+  .advantages-list__title {
+    text-align: unset;
   }
   .advantages-list__items {
     flex-basis: calc((100% - 30px) / 2);
@@ -1285,6 +1287,10 @@ img {
 .img-wrapper {
   position: relative;
   overflow: hidden;
+}
+
+.img-list {
+  width: 100%;
 }
 
 .projects-links {
