@@ -8,6 +8,9 @@
   &:not(:last-child) {
     margin-right: 8px;
   }
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
 }
 
 .menu-buttons {
@@ -39,19 +42,16 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .btn-items {
-    &:nth-child(-n + 3) {
-      margin-bottom: 15px;
-    }
-  }
-}
-
 // 768+
 @media screen and (min-width: 768px) {
   .buttons-list {
     justify-content: center;
     margin-bottom: 30px;
+  }
+  .btn-items {
+    &:nth-child(-n + 3) {
+      margin-bottom: unset;
+    }
   }
 }
 // 1200+

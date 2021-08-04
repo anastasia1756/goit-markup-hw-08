@@ -36,6 +36,11 @@
           </li>
         </ul>
       </nav>
+      <button class="burger-btn" data-menu-open>
+        <svg class="burger-btn__icon" width="40" height="40">
+          <use href="./images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
       <ul class="contacts-list list">
         <li class="contacts-list__items">
           <a class="contacts-list__mail-contact link contact-icons" href="mailto:info@devstudio.com"
@@ -54,6 +59,54 @@
           >
         </li>
       </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="close-btn mobile-menu__close-btn" data-menu-close>
+            <svg class="close-btn__icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="navigation__wrapper">
+            <ul class="menu-nav-list list">
+              <li class="menu-nav-list__item">
+                <a class="menu-nav-list__link link current" href="./index.html">Студия</a>
+              </li>
+              <li class="menu-nav-list__item">
+                <a class="menu-nav-list__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu-nav-list__item">
+                <a class="menu-nav-list__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu__wrapper">
+            <ul class="menu-contacts-list list">
+              <li class="menu-contacts-list__items">
+                <a class="menu-contacts-list__tel-link link" href="tel:+380961111111">
+                  +38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts-list__items">
+                <a class="menu-contacts-list__mail-contact link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu-social-list list">
+              <li class="menu-social-list__item">
+                <a href="#" class="menu-social-list__link link">Instagram</a>
+              </li>
+              <li class="menu-social-list__item">
+                <a href="#" class="menu-social-list__link link">Twitter</a>
+              </li>
+              <li class="menu-social-list__item">
+                <a href="#" class="menu-social-list__link link">Facebook</a>
+              </li>
+              <li class="menu-social-list__item">
+                <a href="#" class="menu-social-list__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
