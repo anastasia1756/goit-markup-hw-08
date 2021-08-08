@@ -70,13 +70,6 @@ img {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -171,8 +164,8 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   left: 50%;
   top: 50%;
   padding: 40px;
@@ -240,8 +233,8 @@ img {
 
 .modal-form-label-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16667;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: --var(--accent-color);
@@ -308,8 +301,8 @@ img {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16667;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
@@ -358,6 +351,21 @@ img {
   .modal-form-head {
     max-width: unset;
     margin-left: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-form-checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-form-label-link {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -724,12 +732,12 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero/Header-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-mobile.jpg");
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
   .main-section {
-    background-image: url("./images/hero/Header-mobile@2x.jpg");
+    background-image: url("../images/hero/Header-mobile@2x.jpg");
   }
 }
 
@@ -754,20 +762,20 @@ img {
 
 @media screen and (min-width: 768px) {
   .main-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Header-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-tablet.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .main-section {
-    background-image: url("./images/hero/Header-tablet@2x.jpg");
+    background-image: url("../images/hero/Header-tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-section {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Header-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-desktop.jpg);
   }
   .hero-title {
     font-size: 44px;
@@ -778,7 +786,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .main-section {
-    background-image: url("./images/hero/Header-desktop@2x.jpg");
+    background-image: url("../images/hero/Header-desktop@2x.jpg");
   }
 }
 
@@ -1078,8 +1086,6 @@ img {
   .footer-container {
     display: flex;
     align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .footer-content:not(:last-child) {
     margin-right: 70px;
@@ -1125,6 +1131,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-bottom: unset;
+  }
   .nav-list-items {
     text-align: left;
   }
@@ -1216,12 +1225,16 @@ img {
   .subscribe-input {
     margin-right: 12px;
     width: 358px;
+    margin-bottom: unset;
   }
   .subscribe-head {
     text-align: unset;
   }
   .join-us-title {
     text-align: unset;
+  }
+  .join-us-container {
+    margin-bottom: unset;
   }
 }
 

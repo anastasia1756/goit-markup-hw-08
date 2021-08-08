@@ -90,6 +90,7 @@
   .subscribe-input {
     margin-right: 12px;
     width: 358px;
+    margin-bottom: unset;
   }
   .subscribe-head {
     text-align: unset;
@@ -97,5 +98,9 @@
 
   .join-us-title {
     text-align: unset;
+  }
+
+  .join-us-container {
+    margin-bottom: unset;
   }
 }

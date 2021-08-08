@@ -36,6 +36,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-bottom: unset;
+  }
+
   .nav-list-items {
     text-align: left;
   }
